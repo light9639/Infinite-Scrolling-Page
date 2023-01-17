@@ -1,6 +1,4 @@
 # :zap: React, Infinite-Scrolling-Api를 이용하여 만든 예제입니다.
-:octocat: https://light9639.github.io/Infinite-Scrolling-Page/
-
 ![127 0 0 1_5173_](https://user-images.githubusercontent.com/95972251/212913858-9c754814-7a53-4238-9750-77866965b5fd.png)
 
 :sparkles: React, Infinite-Scrolling-Api를 이용하여 만든 예제입니다. :sparkles:
