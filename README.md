@@ -1,4 +1,4 @@
-# :zap: React, Infinite-Scrolling-Api를 이용하여 만든 예제입니다.
+# 📜 React, Infinite-Scrolling-Api를 이용하여 만든 예제입니다.
 ![127 0 0 1_5173_](https://user-images.githubusercontent.com/95972251/212913858-9c754814-7a53-4238-9750-77866965b5fd.png)
 
 :sparkles: React, Infinite-Scrolling-Api를 이용하여 만든 예제입니다. :sparkles:
@@ -35,7 +35,7 @@ yarn add axios
 ## ✒️ package.json, App.tsx, db.json 수정 및 작성
 ### :zap: package.json
 - package.json `script` 부분에 밑의 명령어를 추가한다.
-```bash
+```js
 "scripts": {
   "server": "json-server --watch db.json --port 5000",
   ...
@@ -46,7 +46,7 @@ yarn add axios
 - 따라서 package.json에 적힌 `yarn server`와 `yarn dev`를 터미널에서 동시에 사용하면 작동한다.
 - `http://localhost:5000/Every?_limit=10&_page=${page.current}`을 작성하여 10개 씩만 로드되도록 작성한다.
 - `intersection-observer`를 활용하기 위해 usEffect 안에 `if (inView && hasNextPage) {fetch();}`라 작성하여 실행시킨다.
-```bash
+```js
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
@@ -136,7 +136,7 @@ export default App
 ```
 ### :zap: db.json 작성.
 - db.json에 자신이 원하는 데이터를 작성하고 App.tsx에 type을 작성하면 된다. 필자는 밑의 방식의 json 파일을 만들었다.
-```bash
+```js
 {
     "index": 0,
     "src": {
@@ -163,5 +163,5 @@ export default App
     "Review": 2
 },
 ```
-## 🧪 완성 후 테스트
+## ⚗️ 완성 후 테스트
 - 테스트 해보면 첫 로드시에 10개의 자료가 생성된 후 맨 밑에 도달하면 다시 10개의 자료가 생성된 것을 확인할 수 있다.
