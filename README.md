@@ -34,7 +34,7 @@ yarn add axios
 
 ## ✒️ package.json, App.tsx, db.json 수정 및 작성
 ### :zap: package.json
-- package.json `script` 부분에 밑의 명령어를 추가한다.
+- `package.json` `script` 부분에 밑의 명령어를 추가한다.
 ```js
 "scripts": {
   "server": "json-server --watch db.json --port 5000",
@@ -42,8 +42,8 @@ yarn add axios
 }
 ```
 ### :zap: App.tsx
-- json-server는 백엔드 서버가 없을 때 데이터를 가져와 프론트 단에서 사용할 수 있도록 하는 라이브러리다.
-- 따라서 package.json에 적힌 `yarn server`와 `yarn dev`를 터미널에서 동시에 사용하면 작동한다.
+- `json-server`는 백엔드 서버가 없을 때 데이터를 가져와 프론트 단에서 사용할 수 있도록 하는 라이브러리다.
+- 따라서 `package.json`에 적힌 `yarn server`와 `yarn dev`를 터미널에서 동시에 사용하면 작동한다.
 - `http://localhost:5000/Every?_limit=10&_page=${page.current}`을 작성하여 10개 씩만 로드되도록 작성한다.
 - `intersection-observer`를 활용하기 위해 usEffect 안에 `if (inView && hasNextPage) {fetch();}`라 작성하여 실행시킨다.
 ```js
@@ -135,7 +135,7 @@ function App() {
 export default App
 ```
 ### :zap: db.json 작성.
-- db.json에 자신이 원하는 데이터를 작성하고 App.tsx에 type을 작성하면 된다. 필자는 밑의 방식의 json 파일을 만들었다.
+- `db.json`에 자신이 원하는 데이터를 작성하고 `App.tsx`에 `type`을 작성하면 된다. 필자는 밑의 방식의 `json` 파일을 만들었다.
 ```js
 {
     "index": 0,
